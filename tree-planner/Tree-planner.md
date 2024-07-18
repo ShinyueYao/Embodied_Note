@@ -19,7 +19,7 @@ Construct an action tree() to aggregate the sampled plans.
 Tree-PLANNER instructs the LLM again in closed loops to reason on the action tree with environmental observations.
 
 ## 2. Preliminary
-**Problem setup:** Partially observable Markov decision processes(POMDPs) denoted by $\langle S, O, A, \mathcal{T}\rangle$, $S,O,A$ are sets of states, observations and actions, $\mathcal{T}(s_{t+1}|s_t,a_t)$ is a transition model. $o_t$ represents a subset of the underlying state $s_t$. The optimal policy $\pi (a_t|g,h_t,o_t)$ must take into account not only the current observation $o_t$, but also the entire history of actions $h_t=\left\{a_1, \dots a_{t-1} \right\}$.
+**Problem setup:** Partially observable Markov decision processes(POMDPs) denoted by $\langle S, O, A, \mathcal{T}\rangle$, $S,O,A$ are sets of states, observations and actions, $\mathcal{T}(s_{t+1}|s_t,a_t)$ is a transition model. $o_t$ represents a subset of the underlying state $s_t$. The optimal policy $\pi (a_t|g,h_t,o_t)$ must take into account not only the current observation $o_t$, but also the entire history of actions $h_t=\left\{ {a_1, \dots a_{t-1}} \right\}$.
 
 ## 3. Model
 
